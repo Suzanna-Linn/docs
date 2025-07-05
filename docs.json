@@ -1,19 +1,24 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "maple",
-  "name": "My SLua & LSL Guide",
+  "name": "Example Co.",
+  "description": "example content and placeholder text",
   "colors": {
-    "primary": "#3B82F6"
+    "primary": "#3B82F6",
+    "light": "#F8FAFC",
+    "dark": "#0F172A"
   },
   "navigation": {
-    "pages": ["index"],
     "dropdowns": [
       {
-        "dropdown": "Guide",
+        "dropdown": "Documentation",
+        "description": "How to use the Example Co. product",
         "groups": [
           {
-            "group": "Getting Started",
-            "pages": ["index"]
+            "group": "Getting started",
+            "pages": [
+              "index"
+            ]
           }
         ]
       }
