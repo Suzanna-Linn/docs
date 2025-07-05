@@ -5,19 +5,15 @@
   "colors": {
     "primary": "#3B82F6"
   },
-  "pages": {
-    "index": "index"
-  },
   "navigation": {
+    "pages": ["index"],
     "dropdowns": [
       {
         "dropdown": "Guide",
         "groups": [
           {
             "group": "Getting Started",
-            "pages": [
-              "index"
-            ]
+            "pages": ["index"]
           }
         ]
       }
