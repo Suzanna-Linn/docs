@@ -1,6 +1,29 @@
----
-title: 'Test 1234'
-description: 'Description of your new file.'
+# Object-Oriented Programming in SLua
+
+SLua supports object-oriented design using tables and metatables.  
+The most common pattern is the **class table** pattern, where a table acts as a class and instances are created using a `new()` method.
+
 ---
 
-text test
+## 🔧 Defining a Class
+
+Here's a simple class definition for a `Shape`:
+
+```lua
+Shape = {}
+Shape.__index = Shape
+
+function Shape:new(x, y)
+  local obj = {
+    x = x or 0,
+    y = y or 0
+  }
+  setmetatable(obj, self)
+  return obj
+end
+
+function Shape:move(dx, dy)
+  self.x = self.x + dx
+  self.y = self.y + dy
+end
+
