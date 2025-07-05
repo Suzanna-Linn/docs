@@ -5,6 +5,9 @@
   "colors": {
     "primary": "#3B82F6"
   },
+  "pages": {
+    "index": "index"
+  },
   "navigation": {
     "dropdowns": [
       {
