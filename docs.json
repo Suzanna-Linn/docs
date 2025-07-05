@@ -9,10 +9,9 @@
     "dark": "#0F172A"
   },
   "navigation": {
-
-            "pages": [
-              "index"
-            ]
-
+    "pages": [
+      "index",
+      "test"
+    ]
   }
 }
